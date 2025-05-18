@@ -19,6 +19,7 @@ The repository contains the following datasets:
 
 ## Installation
 
+### Option 1: Local Installation
 1. Clone this repository:
 ```bash
 git clone https://github.com/yourusername/Possible_Side_Effects_after_Getting_COVID-19_Vaccine_Based_on_Pre-Existing_Disease_Asthma.git
@@ -30,25 +31,47 @@ cd Possible_Side_Effects_after_Getting_COVID-19_Vaccine_Based_on_Pre-Existing_Di
 pip install -r requirements.txt
 ```
 
+### Option 2: Google Colab
+1. Open [Google Colab](https://colab.research.google.com)
+2. Upload the Jupyter notebooks from this repository to your Google Drive
+3. Mount your Google Drive in Colab:
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+```
+4. Navigate to your notebook location in Google Drive
+5. The required packages will be installed automatically when you run the notebooks
+
 ## Project Structure
 
 The repository contains the following Jupyter notebooks:
 
-1. `vaccine history count.ipynb` - Analysis of vaccine history and counts
-2. `Decision_&_Random_forest_tree.ipynb` - Implementation of Decision Tree and Random Forest models
-3. `Covid-19_vaccine_side_effect.ipynb` - Main analysis of COVID-19 vaccine side effects
-4. `Accuracy_test.ipynb` - Testing accuracy of the models
-5. `Accuracy_percentage.ipynb` - Analysis of accuracy percentages
+### Main Analysis
+1. `Covid-19_vaccine_side_effect.ipynb` - Main analysis of COVID-19 vaccine side effects
+2. `Data preparation.ipynb` - Data preprocessing and preparation
+3. `vaccine history count.ipynb` - Analysis of vaccine history and counts
+
+### Model Implementation
+1. `Decision_&_Random_forest_tree.ipynb` - Implementation of Decision Tree and Random Forest models
+2. `Accuracy_test.ipynb` - Testing accuracy of the models
+3. `Accuracy_percentage.ipynb` - Analysis of accuracy percentages
+
+### Additional Analysis
+1. `Highest history Asthma.ipynb` - Analysis of asthma-related vaccine history
+2. `Highest history JANSSEN MALE.ipynb` - Analysis of Janssen vaccine effects in males
+3. `Highest history JANSSEN FEMALE.ipynb` - Analysis of Janssen vaccine effects in females
 
 ## Usage
 
 1. Download the datasets from the provided Google Drive link
 2. Place the datasets in the project directory
 3. Open and run the Jupyter notebooks in the following order:
-   - First run `Covid-19_vaccine_side_effect.ipynb` for the main analysis
-   - Then run `vaccine history count.ipynb` for additional analysis
-   - Use `Decision_&_Random_forest_tree.ipynb` for model implementation
-   - Finally, run the accuracy analysis notebooks
+   - First run `Data preparation.ipynb` for data preprocessing
+   - Then run `Covid-19_vaccine_side_effect.ipynb` for the main analysis
+   - Use `vaccine history count.ipynb` for vaccine history analysis
+   - Run `Decision_&_Random_forest_tree.ipynb` for model implementation
+   - Finally, run the accuracy analysis notebooks (`Accuracy_test.ipynb` and `Accuracy_percentage.ipynb`)
+   - For specific analyses, refer to the additional analysis notebooks
 
 ## Citation
 
